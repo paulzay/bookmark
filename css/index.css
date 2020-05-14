@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:400&display=swap");
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+* body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: Rubik;
+  font-size: 18px;
+}
+* li{
+  list-style: none;
+}
+* a{
+  text-decoration: none;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 10vw;
+  align-items: center;
+}
+.nav-links ul li{
+  display: inline-flex;
+  margin-left: 25px;
+}
+.nav-links ul li a{
+  color: lightslategray;
+  font-weight: 500;
+}
+
+.btn{
+  color: #fff;
+  font-weight: 400;
+  background-color: hsl(0, 94%, 66%);
+  align-items: center;
+  height: 35px;
+  width: 100px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+}
+footer{
+  background-color: hsl(229, 31%, 21%);
+}
+
+footer .nav-links li{
+  vertical-align: middle;
+}
+footer .nav-links ul li a{
+  color: #fff;
+}

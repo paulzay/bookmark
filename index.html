@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./css/index.css">
   <title>Frontend Mentor | Bookmark landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,11 +15,19 @@
   </style>
 </head>
 <body>
-
-  Features
-  Pricing
-  Contact
-  Login
+<header>
+  <div class="logo">
+    <img src="./images/logo-bookmark.svg" alt="logo">
+  </div>
+  <div class="nav-links">
+    <ul>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><button class="btn">Login</button></li>
+    </ul>
+  </div>
+</header>
 
   A Simple Bookmark Manager
 
@@ -125,10 +133,18 @@
   Contact
   
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <div class="nav-links">
+      <ul>
+        <li><img src="./images/logo-bookmark.svg" alt="logo"></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
   </footer>
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </p>
 </body>
 </html>
