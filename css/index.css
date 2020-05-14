@@ -153,5 +153,150 @@ form input[type=text]{
   margin-left: 40%;
   margin-top: 5%;
   background-color: hsl(231, 69%, 60%);
-  width: 200px;
+  width: 100px;
+}
+
+/*extension styles*/
+
+.extension{
+  background-color: #fff;
+  padding-top: 30px;
+  margin-top: 30px;
+  height: 100vh;
+}
+.browsers{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+
+}
+.browser{
+background-color: white;
+width: 250px;
+margin-right: 10px;
+height: 350px;
+}
+.browser img{
+  align-self: center;
+  padding: 20px 33%;
+}
+.brws{
+  color: #fff;
+  font-weight: 400;
+  background-color: hsl(228, 45%, 44%);
+  align-items: center;
+  height: 35px;
+  width: 205px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.writing{
+  text-align: center;
+}
+.writing h3{
+  margin-bottom:50px;
+  color: hsl(229, 8%, 60%);
+  font-size: 14px;
+  text-align: center;
+}
+.shadow {
+  box-shadow: 4px 3px 5px 0px rgba(222,206,222,1);
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+.b2{
+  margin-top: 20px;
+}
+.b3{
+  margin-top: 40px;
+}
+.extension h1 {
+  text-align: center;
+}
+.extension p {
+  text-align: center;
+  padding: 20px 300px;
+  color: hsl(225, 3%, 50%)
+}
+.bookmarks{
+  padding-top: 60px;
+  width: 100vw;
+  height: 90vh;
+  display: inline-flex;
+}
+.imag{
+  margin-left: 10vw;
+}
+.bms{
+  margin-left: 100px;
+}
+.bkmk{
+  color: #fff;
+  font-weight: 400;
+  background-color: hsl(228, 45%, 44%);
+  align-items: center;
+  height: 35px;
+  width: 100px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.bms p{
+  color: hsl(225, 3%, 50%)
+}
+.manager{
+  display: inline-flex;
+  width: 100vw;
+  height: 100vh;
+}
+.mgr{
+margin-left: 10vw;
+}
+.mgr h1{
+font-size: 40px;
+font-weight: 800;
+}
+.mgr p{
+  color: hsl(225, 3%, 50%);
+  line-height: 1.6em;
+}
+.imags{
+  margin-right: 4vw;
+}
+.btns{
+  color: #fff;
+  font-weight: 400;
+  background-color: hsl(228, 45%, 44%);
+  align-items: center;
+  height: 35px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.btns1{
+  background-color: hsl(224, 19%, 88%);
+  color: black;
+}
+.feats{
+height: 60vh;
+text-align: center;
+}
+.fts p{
+  color: hsl(225, 3%, 50%);
+  line-height: 1.6em;
+}
+
+.options ul{
+  display: inline-flex;
+  margin-right: 30px;
+}
+.options ul li{
+  margin: auto 20px;
+  color: hsl(225, 3%, 50%);
+  border-bottom: 4px solid gray;
+  padding-bottom: 20px;
 }
