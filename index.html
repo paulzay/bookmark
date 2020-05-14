@@ -83,44 +83,39 @@
   Add to Opera
   Minimum version 46
   Add & Install Extension
-
-  Frequently Asked Questions
-  
-  Here are some of our FAQs. If you have any other questions you’d like 
-  answered please feel free to email us.
-
-  <!-- Question 1 -->
-  What is Bookmark?
-
-  <!-- Answer 1 -->
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
-
-  <!-- Question 2 -->
-  How can I request a new browser?
-
-  <!-- Answer 2 -->
-  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-
-  <!-- Question 3 -->
-  Is there a mobile app?
-
-  <!-- Answer 3 -->
-  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-  sollicitudin ex et ultricies bibendum.
-
-  <!-- Question 4 -->
-  What about other Chromium browsers?
-
-  <!-- Answer 4 -->
-  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-  vitae neque eget nisl gravida pellentesque non ut velit.
-
-  More Info
+<section class="faq">
+  <h1>Frequently Asked Questions</h1>
+  <p>Here are some of our FAQs. If you have any other questions you’d like 
+    answered please feel free to email us.</p>
+    
+<div class="questions">
+  <button type="button" class="collapsible">What is Bookmark?</button>
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+      justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+    </p>
+  </div>
+  <button type="button" class="collapsible">How can I request a new browser?</button>
+  <div class="content">
+    <p>  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+      Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+      ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+      Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+  </div>
+  <button type="button" class="collapsible">Is there a mobile app?</button>
+  <div class="content">
+    <p>  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+      urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+      sollicitudin ex et ultricies bibendum.</p>
+  </div>
+  <button type="button" class="collapsible">What about other Chromium browsers?</button>
+  <div class="content">
+    <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+      vitae neque eget nisl gravida pellentesque non ut velit.</p>
+  </div>
+  <button class="btn info">More Info</button>
+</div>
+</section>
 <section class="call-action">
   <div class="c-a">
     <p>35,000+ already joined</p> 
@@ -149,7 +144,23 @@
   </footer>
   <p class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Paul Ogolla</a>.
   </p>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
 </body>
 </html>

@@ -88,3 +88,70 @@ form input[type=text]{
   border: none;
   padding: 10px;
 }
+.faq{
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px auto;
+}
+.faq h1{
+  margin-top: 50px;
+}
+.faq p{
+  margin: 0 400px;
+  text-align: center;
+  padding-bottom: 20px;
+  color: hsl(229, 8%, 60%);
+}
+.questions{
+  margin-top: 20px;
+}
+
+.collapsible {
+  background-color: #fff;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-left: 25%;
+  border-top: 1px solid gainsboro;
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(241, 234, 234);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #fff;
+}
+
+.info{
+  margin-left: 40%;
+  margin-top: 5%;
+  background-color: hsl(231, 69%, 60%);
+  width: 200px;
+}
